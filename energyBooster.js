@@ -4,6 +4,8 @@ function energyBooster(data) {
     let numOfSet = Number(data[2]);
     let sum = 0;
 
+    // comment :)
+
     if (set == "small") {
         if (fruit == "Watermelon") {
             sum = (numOfSet * 2) * 56;
