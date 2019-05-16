@@ -1,4 +1,4 @@
-function MultiplNumberByTwo(num) {
+function multiplNumberByTwo(num) {
     console.log(num * 2);
     
 }

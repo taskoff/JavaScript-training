@@ -1,4 +1,4 @@
-function NumbersFromMToN(m, n) {
+function numbersFromMToN(m, n) {
     while (m >= n) {
         console.log(m);
         m--;
