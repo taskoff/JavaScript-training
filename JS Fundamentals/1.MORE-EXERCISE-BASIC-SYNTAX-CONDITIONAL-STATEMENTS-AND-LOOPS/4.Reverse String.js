@@ -5,6 +5,6 @@ function reverseString(str) {
             .join('')
     
     console.log(arr);
-    
+    // commetnt :)
 }
 reverseString('SoftUni')
