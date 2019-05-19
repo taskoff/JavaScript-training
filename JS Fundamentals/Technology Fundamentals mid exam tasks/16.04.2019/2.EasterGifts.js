@@ -11,18 +11,13 @@ function easterGifts(data) {
                 giftsList[index] = 'None';
                 
             }
-            console.log(giftsList.join(' '));
         } else if (command === 'Required') {
             if (index < giftsList.length ) {
-                giftsList.splice(index, 0, gift);
-                console.log(giftsList.join(' '));
-                
+                giftsList.splice(index, 1, gift);
             }
         } else if (command === 'JustInCase') {
             giftsList.pop();
             giftsList.push(gift);
-            console.log(giftsList.join(' '))
-            
         } 
         commandAndGiftAndIndex = data.shift();
     }
@@ -35,9 +30,12 @@ function easterGifts(data) {
     console.log(line.join(' '))
 
 }
-easterGifts(['Eggs StuffedAnimal Cozonac Sweets EasterBunny Eggs Clothes',
-    'OutOfStock Eggs',
-    'Required Spoon 2',
-    'JustInCase ChocolateEgg',
-    'No Money'
+easterGifts(['Sweets Cozonac Clothes Flowers Wine Clothes Eggs Clothes',
+    'Paper 8',
+    'OutOfStock Clothes',
+    'Required Chocolate 2',
+    'JustInCase Hat',
+    'OutOfStock ',
+    'No Money',
+    
 ])
