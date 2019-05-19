@@ -5,17 +5,18 @@ function easterGifts(data) {
     while (commandAndGiftAndIndex !== 'No Money') {
         let [command, gift, index] = commandAndGiftAndIndex.split(' ')
         if (command === 'OutOfStock') {
-            gift
+            
             while (giftsList.includes(gift)) {
                 let index = giftsList.indexOf(gift);
                 giftsList[index] = 'None';
                 
             }
         } else if (command === 'Required') {
-            if (index < giftsList.length ) {
+            if (0 <= index && index < giftsList.length ) {
                 giftsList.splice(index, 1, gift);
             }
         } else if (command === 'JustInCase') {
+            
             giftsList.pop();
             giftsList.push(gift);
         } 
@@ -31,11 +32,11 @@ function easterGifts(data) {
 
 }
 easterGifts(['Sweets Cozonac Clothes Flowers Wine Clothes Eggs Clothes',
-    'Paper 8',
+    'Required Paper 8',
     'OutOfStock Clothes',
     'Required Chocolate 2',
     'JustInCase Hat',
-    'OutOfStock ',
+    'OutOfStock Cable',
     'No Money',
     
 ])
