@@ -23,7 +23,7 @@ function finalQuest(arr) {
         } else if (command === 'Put') {
             let word = info[0];
             let index = +(info[1] - 1);
-            if (0 <= index && index  < wordsLine.length) {
+            if (0 <= index && index  <= wordsLine.length) {
                 wordsLine.splice(index, 0, word);
             }
         } else if (command === 'Sort') {
