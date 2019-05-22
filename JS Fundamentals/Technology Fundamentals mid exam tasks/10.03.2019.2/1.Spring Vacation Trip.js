@@ -25,7 +25,7 @@ function springVacationTrip(arr) {
             allExpenses = allExpenses * 1.4;
         }
         if (day % 7 === 0) {
-            budget += allExpenses / group;
+            allExpenses -= allExpenses / group;
         }
         if (budget < allExpenses) {
             console.log(`Not enough money to continue the trip. You need ${(allExpenses - budget).toFixed(2)}$ more.`);
@@ -39,4 +39,4 @@ function springVacationTrip(arr) {
     }
     
 }
-springVacationTrip([10, 20500, 11, 1.2, 8, 13, 100, 150, 500, 400, 600, 130, 300, 350, 200, 300])
+springVacationTrip([10, 20500, 11, 1.2, 8, 13, 100, 150, 500, 400, 600, 130, 300, 350, 200, 300 ])
