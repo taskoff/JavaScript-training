@@ -5,6 +5,9 @@ function christmasSpirit(arr) {
     let spirit = 0;
 
     for (let i = 1; i <= days; i++) {
+        if (i % 11 == 0) {
+            quantity += 2;
+        }
         if (i % 2 == 0) {
             sum += quantity * 2;
             spirit += 5;
@@ -17,18 +20,16 @@ function christmasSpirit(arr) {
         if (i % 5 == 0) {
             sum += quantity * 15;
             spirit += 17;
-            if (i % 3 == 0) {
-                spirit += 30;
-            }
+            
+        }
+        if (i % 3 == 0 && i % 5 == 0) {
+            spirit += 30;
         }
         if (i % 10 == 0) {
             spirit -= 20;
             sum += 5 + 3 + 15;
         }
-        if (i % 11 == 0) {
-            quantity += 2;
-        }
-        
+       
     }
     if (days % 10  == 0 ) {
         spirit -= 30;
