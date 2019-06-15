@@ -12,7 +12,6 @@ function ladybugs(arr) {
             }            
         }         
      }
-     //console.log(mainArr)
      for (let i = 0; i < arr.length; i++) {
         let [index, direction, length] = arr[i].split(' ');
         index = Number(index);

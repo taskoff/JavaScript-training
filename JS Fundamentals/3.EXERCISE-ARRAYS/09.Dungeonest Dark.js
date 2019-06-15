@@ -42,3 +42,4 @@ function dungeonestDark(arr) {
     
 }
 dungeonestDark(['cat 10|potion 30|orc 10|chest 10|snake 25|chest 110'])
+//
