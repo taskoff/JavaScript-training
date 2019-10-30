@@ -10,24 +10,16 @@ class Hex {
         return result;
     }
     plus(number){
-        // if (typeof number === 'number') {
-        //     this.value += number;
-        //     return this.toString()
-        // } 
+       
         if (number instanceof Hex) {
-            // console.log(number.value)
-            // this.value += number.valueOf();
-            // return this.value
+           
             return (new Hex(this.value + number.valueOf()))
         }
     }
     minus(number) {
-        // if (typeof number === 'number') {
-        //     this.value -= number.valueOf();
-        //     return this.toString()
-        // } 
+     
         if (number instanceof Hex) {
-            // this.value -= number.value;
+           
             return (new Hex(this.value - number.valueOf()))
         }
     }
